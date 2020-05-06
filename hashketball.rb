@@ -181,4 +181,6 @@ def player_stats(player_name)
 end
 
   def big_shoe_rebounds
-    
+     game_hash.values.each do |team_name|
+       team_name[:players].each do |player|
+         
