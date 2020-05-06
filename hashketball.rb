@@ -186,5 +186,10 @@ end
      game_hash.values.each do |team_name|
        team_name[:players].each do |player|
          if player[:shoe] > big_shoe
-           big_shoe = 
+           big_shoe = player[:shoe]
+           rebounds = player[:rebounds]
+         end
+        end
+        rebounds
+    end
          
